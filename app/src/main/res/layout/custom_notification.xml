@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="64dp" >
+
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/left_image" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/left_image" />
+
+    <ImageView
+        android:id="@+id/imagenotiright"
+        android:src="@drawable/ic_cloud"
+        android:contentDescription="@string/app_name"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
